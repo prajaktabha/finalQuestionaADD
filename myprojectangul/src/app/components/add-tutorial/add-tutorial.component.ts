@@ -9,18 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ["./add-tutorial.component.scss"],
 })
 export class AddTutorialComponent implements OnInit {
-  // mydata: any;
-  // tutorial: Tutorial = {
-  //   quizname: "",
-  //   time: "",
-  //   count: "",
-  //   categoryid: "",
-  // };
-
-  // cid: any = 0;
-  // submitted = false;
-  // catName = " ";
-
+ 
   
   quiz = new Tutorial();
   category : any;

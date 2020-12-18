@@ -6,7 +6,7 @@ export class Question {
   option3: string;
   option4: string;
   answer: string;
-  // category:string;
+ 
   type:string;
   quizname:string;
 }

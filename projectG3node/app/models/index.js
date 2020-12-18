@@ -5,7 +5,7 @@ const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
   host: dbConfig.HOST,
   dialect: dbConfig.dialect,
   operatorsAliases: false,
-//define:{timestamp:false},
+
   pool: {
     max: dbConfig.pool.max,
     min: dbConfig.pool.min,
@@ -37,11 +37,7 @@ db.users.belongsTo(db.roles,{
   as: "role"
 });
 
-// db.roles.hasMany(db.users, { as: "users" });
-// db.users.belongsTo(db.roles, {
-//   foreignKey: "roleId",
-//   as: "role"
-// });
+
 
 
 db.category.hasMany(db.quize, { as: "quizes" });
